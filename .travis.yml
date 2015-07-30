@@ -9,5 +9,6 @@ deploy:
     secure: mmetdgJilUCLZnjPWCNUGOEdGMIOMLZ2FepWod+xed8g89rDDDq1tN0IKmuyDF9zToJN2HchYlddlpm3bMbuS/PEByuaeJtaYHdNrt6N+hiGE0BIveTRV9huB/8gnRPZ/AFOlyBCZFa4Z+Zzn2A9TxGpOLFu/LXgqGW+HLoZFJkLFkaV+XQm6FaAuWaxSwEiPi/EaiLvNdTlXe/0cfh+whembqCsIkJD2835d9a1nr5hNuafwaiyAhAA/uHjJPaFGQUkHjT3IJ/gUfmUmaLkYf0VE1wxqe90uNwk6nTH9cWfM6uQ7/dUHYWu9swKMl40vHo+eE60EL5Nt7gZrctwuPkipmzF4Ofyo7uqHaA8FEc1/raEEsavsc2fx3tOqYA+uZ6kFAUewt5izTkqLI9wW6qB/sLk80qr63nsL+vXvJWZusKgYkyqKrn0xvdM71Mn+GWmsfRNEY3KGmF+qX0wLhlNA9llRdQ3N0OmsEBvt6FuAeCiArKlcPO9A3mDqICHSxcB7YTcaCYqz4OL+FgCehNtfIee1Hz3xESVRSZtEpEPm/zqXrBbnCmlBhxSey+KB/CNvFxfXlSkyKFV4LCl7/Hg8TVVXIHRd9BAXJenhzckqKC1erDK778kbWTUbc3oLg7JSLvKOEWMzWT+0CeMHpntexvXa1UFkTkqD72pSrc=
   on:
     tags: true
+    node: '0.10'
     repo: suprememoocow/mongodb-unique-ids
 sudo: false
