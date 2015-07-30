@@ -1,6 +1,6 @@
 {
   "name": "mongodb-unique-ids",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Given a set of mongodb ObjectIDs, returns the unique set",
   "main": "index.js",
   "scripts": {
