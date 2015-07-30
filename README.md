@@ -1,5 +1,7 @@
 # mongodb-unique-ids
 
+[![Build Status](https://travis-ci.org/suprememoocow/mongodb-unique-ids.svg?branch=master)](https://travis-ci.org/suprememoocow/mongodb-unique-ids)
+
 A tiny utility for returning a unique set of `ObjectID`-like identifiers, given
 an array of `ObjectID`-like identifiers.
 

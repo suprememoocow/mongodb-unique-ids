@@ -10,3 +10,4 @@ deploy:
   on:
     tags: true
     node: '0.10'
+sudo: false
