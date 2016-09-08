@@ -26,7 +26,7 @@ describe('mongodb-unique-ids', function() {
 
   it('should work with very large sets of Strings', function() {
     var bigSet = [];
-    for (var i = 0; i < 20000; i++) {
+    for (var i = 0; i < 200000; i++) {
       bigSet.push(ID_SET[i % ID_SET.length]);
     }
     assert.deepEqual(ID_SET, mongodbUniqueIds(bigSet));
@@ -38,16 +38,27 @@ describe('mongodb-unique-ids', function() {
     });
 
     var bigSet = [];
-    for (var i = 0; i < 20000; i++) {
+    for (var i = 0; i < 200000; i++) {
       bigSet.push(uniqueIds[i % uniqueIds.length]);
     }
     assert.deepEqual(uniqueIds, mongodbUniqueIds(bigSet));
   });
 
-  it.skip('should work with mixed', function() {
+  it('should work with mixed', function() {
     // This does not currently work
     assert.deepEqual(['51adcd412aefe1576f000005'], mongodbUniqueIds(
       ['51adcd412aefe1576f000005', new ObjectID('51adcd412aefe1576f000005')]
-    ));
+    ).map(String));
   });
+
+  it('should work very large sets of unique objectIds', function() {
+    var bigSet = [];
+    for (var i = 0; i < 200000; i++) {
+      bigSet.push(new ObjectID());
+    }
+
+    var unique = mongodbUniqueIds(bigSet);
+    assert.strictEqual(bigSet.length, unique.length);
+    assert.deepEqual(bigSet, unique);
+  })
 });

@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/suprememoocow/mongodb-unique-ids#readme",
   "devDependencies": {
-    "bson": "^0.4.8",
+    "bson": "^0.5.4",
     "mocha": "^2.2.5"
   }
 }
